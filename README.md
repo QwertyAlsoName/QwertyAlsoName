@@ -27,55 +27,6 @@
 <!-- ───────────────  CHERRY BLOSSOM DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blossom-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✿&nbsp;&nbsp;关于我 · About Me
-
-<table>
-<tr>
-<td valign="top" width="60%">
-
-```yaml
-✿  名字 / name:        王心月  (Wang Xinyue)
-🌙  含义 / meaning:     "heart moon"
-💼  专注 / focus:       .NET · MAUI · WPF · Cloud
-🎨  热爱 / loves:
-      - elegant, scalable architectures
-      - thoughtful UI / UX design
-      - turning complex ideas into refined experiences
-🛠️  造诣 / craft:       C# · XAML · Azure · Clean Architecture
-🌱  探索 / exploring:   Cross-platform UI patterns
-                        Reactive state · MVVM
-💞  哲学 / philosophy:  "code should feel like poetry —
-                         precise, deliberate, soft on the eyes."
-```
-
-</td>
-<td valign="top" width="40%" align="center">
-
-<br>
-
-<sub>
-✦ &nbsp;<i>elegant code,</i><br>
-&nbsp;&nbsp;&nbsp;<i>refined experiences</i>&nbsp; ✦
-</sub>
-
-<br><br>
-
-<img src="https://img.shields.io/badge/-%E2%9C%BF%20coding%20with%20care-fce4ec?style=for-the-badge&labelColor=fce4ec&color=fce4ec" alt="coding with care" />
-
-<br><br>
-
-<sub>
-🌸 &nbsp;based in spirit if not always in space<br>
-🌙 &nbsp;writing software that respects the user
-</sub>
-
-</td>
-</tr>
-</table>
-
-<!-- ───────────────  CHERRY BLOSSOM DIVIDER  ─────────────── -->
-<p align="center"><img src="./assets/blossom-divider.svg" alt="" width="100%" /></p>
-
 ## &nbsp;✿&nbsp;&nbsp;Tech Stack · 技术栈
 
 <table align="center">
