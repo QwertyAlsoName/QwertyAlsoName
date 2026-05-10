@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 50" preserveAspectRatio="xMidYMid meet" role="presentation">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#f48fb1" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#f48fb1" stop-opacity="0.7"/>
+      <stop offset="50%"  stop-color="#ec407a" stop-opacity="1"/>
+      <stop offset="85%"  stop-color="#f48fb1" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f48fb1" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="blossomGlow">
+      <stop offset="0%"  stop-color="#fce4ec" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fce4ec" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="petalGlow">
+      <feGaussianBlur stdDeviation="0.8"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main horizontal line as thin rect (gradient fills render reliably; gradient strokes don't always) -->
+  <rect x="0" y="24" width="1200" height="2" fill="url(#lineGrad)"/>
+
+  <!-- Soft halo behind blossom -->
+  <circle cx="600" cy="25" r="25" fill="url(#blossomGlow)">
+    <animate attributeName="r" values="22;28;22" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Cherry blossom (5 petals + yellow center) -->
+  <g transform="translate(600 25)" filter="url(#petalGlow)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="40s" repeatCount="indefinite"/>
+      <!-- 5 petals at 72° intervals -->
+      <path d="M 0 -9 C -4 -7, -4.5 -3, -1.5 -1 L 0 0 L 1.5 -1 C 4.5 -3, 4 -7, 0 -9 Z"
+            fill="#fce4ec" stroke="#f48fb1" stroke-width="0.5"/>
+      <path d="M 0 -9 C -4 -7, -4.5 -3, -1.5 -1 L 0 0 L 1.5 -1 C 4.5 -3, 4 -7, 0 -9 Z"
+            fill="#fce4ec" stroke="#f48fb1" stroke-width="0.5" transform="rotate(72)"/>
+      <path d="M 0 -9 C -4 -7, -4.5 -3, -1.5 -1 L 0 0 L 1.5 -1 C 4.5 -3, 4 -7, 0 -9 Z"
+            fill="#fce4ec" stroke="#f48fb1" stroke-width="0.5" transform="rotate(144)"/>
+      <path d="M 0 -9 C -4 -7, -4.5 -3, -1.5 -1 L 0 0 L 1.5 -1 C 4.5 -3, 4 -7, 0 -9 Z"
+            fill="#fce4ec" stroke="#f48fb1" stroke-width="0.5" transform="rotate(216)"/>
+      <path d="M 0 -9 C -4 -7, -4.5 -3, -1.5 -1 L 0 0 L 1.5 -1 C 4.5 -3, 4 -7, 0 -9 Z"
+            fill="#fce4ec" stroke="#f48fb1" stroke-width="0.5" transform="rotate(288)"/>
+    </g>
+    <!-- Center stamen -->
+    <circle r="2" fill="#fde047"/>
+    <circle r="0.8" fill="#f59e0b"/>
+  </g>
+
+  <!-- Drifting petals along the line -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="615,25; 900,25" dur="9s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 540" dur="4s" repeatCount="indefinite"/>
+      <path d="M 0 -4 C -2 -3, -2 -1, 0 0 C 2 -1, 2 -3, 0 -4 Z" fill="#f48fb1" opacity="0.8"/>
+    </g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="9s" repeatCount="indefinite"/>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="585,25; 300,25" dur="11s" begin="3s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; -540" dur="5s" repeatCount="indefinite"/>
+      <path d="M 0 -4 C -2 -3, -2 -1, 0 0 C 2 -1, 2 -3, 0 -4 Z" fill="#fce4ec" opacity="0.85"/>
+    </g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="11s" begin="3s" repeatCount="indefinite"/>
+  </g>
+</svg>

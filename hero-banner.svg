@@ -1,0 +1,380 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="王心月 - .NET Developer banner">
+  <defs>
+    <!-- BASE BACKGROUND: deep dusk gradient with rose undertones -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="80%">
+      <stop offset="0%"   stop-color="#3d2240"/>
+      <stop offset="50%"  stop-color="#241430"/>
+      <stop offset="100%" stop-color="#150a1d"/>
+    </radialGradient>
+
+    <!-- ATMOSPHERIC CLOUDS in soft pinks/lavenders -->
+    <radialGradient id="cloud1" cx="22%" cy="50%" r="32%">
+      <stop offset="0%"   stop-color="#7a4a6a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud2" cx="78%" cy="40%" r="32%">
+      <stop offset="0%"   stop-color="#6a4870" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud3" cx="50%" cy="80%" r="35%">
+      <stop offset="0%"   stop-color="#7d3f60" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud4" cx="15%" cy="15%" r="20%">
+      <stop offset="0%"   stop-color="#5a3a6a" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud5" cx="85%" cy="85%" r="22%">
+      <stop offset="0%"   stop-color="#6a4564" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- MOON GLOW HALO -->
+    <radialGradient id="moonGlow">
+      <stop offset="0%"   stop-color="#fff5f7" stop-opacity="0.55"/>
+      <stop offset="40%"  stop-color="#fce4ec" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fff5f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- VIGNETTE -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="78%">
+      <stop offset="50%"  stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0510" stop-opacity="0.7"/>
+    </radialGradient>
+
+    <!-- TITLE GRADIENT (soft rose-cream) -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#fff5f7"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+
+    <!-- SOFT PINK GLOW for title -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" values="1 0 0 0 0.96   0 1 0 0 0.78   0 0 1 0 0.85   0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- CRESCENT MOON MASK -->
+    <mask id="crescentMask">
+      <rect width="1200" height="360" fill="white"/>
+      <circle cx="174" cy="84" r="30" fill="black"/>
+    </mask>
+
+    <!-- GRAIN texture (browser-only enhancement) -->
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="13" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.7   0 0 0 0 0.5   0 0 0 0 0.6   0 0 0 0.3 0"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND LAYERS -->
+  <rect width="1200" height="360" fill="url(#bgGrad)"/>
+  <rect width="1200" height="360" fill="url(#cloud1)"/>
+  <rect width="1200" height="360" fill="url(#cloud2)"/>
+  <rect width="1200" height="360" fill="url(#cloud3)"/>
+  <rect width="1200" height="360" fill="url(#cloud4)"/>
+  <rect width="1200" height="360" fill="url(#cloud5)"/>
+
+  <!-- HAND-PLACED STATIC STARS -->
+  <g>
+<circle cx="246" cy="81" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="965" cy="228" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="283" cy="325" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="209" cy="230" r="1.0" fill="#f8bbd0" opacity="0.3"/>
+    <circle cx="280" cy="105" r="0.6" fill="#fff5f7" opacity="0.5"/>
+    <circle cx="569" cy="328" r="0.3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="42" cy="160" r="0.5" fill="#ffffff" opacity="0.3"/>
+    <circle cx="586" cy="78" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="156" cy="31" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="341" cy="208" r="0.5" fill="#ffffff" opacity="0.7"/>
+    <circle cx="1047" cy="104" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="1111" cy="230" r="0.8" fill="#ffffff" opacity="0.3"/>
+    <circle cx="675" cy="198" r="0.5" fill="#ffffff" opacity="0.7"/>
+    <circle cx="1037" cy="91" r="0.5" fill="#ffffff" opacity="0.5"/>
+    <circle cx="933" cy="306" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="617" cy="254" r="0.3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="848" cy="297" r="0.3" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="1083" cy="273" r="0.8" fill="#ffffff" opacity="0.5"/>
+    <circle cx="751" cy="58" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="284" cy="75" r="0.5" fill="#ffffff" opacity="0.3"/>
+    <circle cx="930" cy="51" r="0.3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="1082" cy="59" r="0.4" fill="#ffffff" opacity="0.3"/>
+    <circle cx="816" cy="220" r="0.5" fill="#ffffff" opacity="0.7"/>
+    <circle cx="509" cy="286" r="0.3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="1090" cy="60" r="0.6" fill="#fff5f7" opacity="0.7"/>
+    <circle cx="827" cy="163" r="0.4" fill="#fce4ec" opacity="0.5"/>
+    <circle cx="201" cy="219" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="430" cy="26" r="0.5" fill="#ffffff" opacity="0.3"/>
+    <circle cx="78" cy="252" r="0.3" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="852" cy="33" r="0.3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="716" cy="182" r="0.4" fill="#ffffff" opacity="0.3"/>
+    <circle cx="733" cy="309" r="0.5" fill="#ffffff" opacity="0.3"/>
+    <circle cx="1055" cy="74" r="0.3" fill="#fff5f7" opacity="0.3"/>
+    <circle cx="1179" cy="96" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="1031" cy="279" r="0.8" fill="#ffffff" opacity="0.3"/>
+    <circle cx="530" cy="119" r="0.4" fill="#ffffff" opacity="0.3"/>
+    <circle cx="473" cy="205" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="1070" cy="91" r="0.8" fill="#ffffff" opacity="0.9"/>
+    <circle cx="686" cy="127" r="0.5" fill="#fce4ec" opacity="0.5"/>
+    <circle cx="354" cy="185" r="0.8" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="1027" cy="16" r="0.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="666" cy="286" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="545" cy="224" r="0.3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="144" cy="246" r="0.6" fill="#fff5f7" opacity="0.3"/>
+    <circle cx="1089" cy="138" r="0.6" fill="#ffffff" opacity="0.7"/>
+    <circle cx="552" cy="333" r="0.4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="984" cy="209" r="0.5" fill="#ffffff" opacity="0.5"/>
+    <circle cx="231" cy="223" r="0.4" fill="#fff5f7" opacity="0.3"/>
+    <circle cx="356" cy="154" r="0.3" fill="#fff5f7" opacity="0.3"/>
+    <circle cx="137" cy="170" r="0.4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="1008" cy="213" r="0.5" fill="#ffffff" opacity="0.7"/>
+    <circle cx="1168" cy="323" r="0.3" fill="#fff5f7" opacity="0.9"/>
+    <circle cx="778" cy="230" r="0.6" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="815" cy="157" r="0.5" fill="#ffffff" opacity="0.7"/>
+    <circle cx="506" cy="170" r="0.4" fill="#ffffff" opacity="0.3"/>
+    <circle cx="71" cy="88" r="0.3" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="834" cy="144" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="257" cy="111" r="0.4" fill="#fce4ec" opacity="0.7"/>
+    <circle cx="868" cy="19" r="0.6" fill="#ffffff" opacity="0.3"/>
+    <circle cx="1080" cy="148" r="0.6" fill="#fff5f7" opacity="0.5"/>
+    <circle cx="839" cy="158" r="0.5" fill="#f8bbd0" opacity="0.7"/>
+    <circle cx="1012" cy="79" r="0.3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="56" cy="43" r="0.5" fill="#fff5f7" opacity="0.3"/>
+    <circle cx="310" cy="226" r="0.4" fill="#ffffff" opacity="0.9"/>
+    <circle cx="637" cy="114" r="0.3" fill="#fce4ec" opacity="0.5"/>
+    <circle cx="690" cy="214" r="0.4" fill="#ffffff" opacity="0.3"/>
+    <circle cx="229" cy="175" r="0.4" fill="#fce4ec" opacity="0.7"/>
+    <circle cx="1107" cy="24" r="0.6" fill="#fff5f7" opacity="0.7"/>
+    <circle cx="1143" cy="278" r="0.8" fill="#fce4ec" opacity="0.5"/>
+    <circle cx="1163" cy="108" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="69" cy="147" r="0.5" fill="#ffffff" opacity="0.5"/>
+    <circle cx="1145" cy="292" r="0.3" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="721" cy="79" r="0.4" fill="#fce4ec" opacity="0.9"/>
+    <circle cx="172" cy="69" r="0.6" fill="#fff5f7" opacity="0.7"/>
+    <circle cx="598" cy="77" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="820" cy="269" r="0.5" fill="#fff5f7" opacity="0.9"/>
+    <circle cx="237" cy="183" r="0.3" fill="#ffffff" opacity="0.3"/>
+    <circle cx="448" cy="156" r="0.4" fill="#ffffff" opacity="0.9"/>
+    <circle cx="256" cy="183" r="0.4" fill="#ffffff" opacity="0.3"/>
+    <circle cx="198" cy="78" r="0.3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="46" cy="256" r="0.3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="34" cy="334" r="0.4" fill="#f8bbd0" opacity="0.7"/>
+    <circle cx="855" cy="102" r="0.3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="694" cy="78" r="0.3" fill="#fff5f7" opacity="0.7"/>
+    <circle cx="343" cy="28" r="0.3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="106" cy="205" r="0.5" fill="#ffffff" opacity="0.7"/>
+    <circle cx="33" cy="66" r="0.6" fill="#ffffff" opacity="0.3"/>
+    <circle cx="836" cy="83" r="0.3" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="153" cy="196" r="0.3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="138" cy="307" r="0.4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="562" cy="136" r="0.6" fill="#ffffff" opacity="0.9"/>
+    <circle cx="910" cy="161" r="1.0" fill="#ffffff" opacity="0.3"/>
+    <circle cx="619" cy="48" r="0.5" fill="#fce4ec" opacity="0.3"/>
+    <circle cx="386" cy="243" r="0.6" fill="#fce4ec" opacity="0.9"/>
+    <circle cx="748" cy="16" r="0.5" fill="#ffffff" opacity="0.3"/>
+    <circle cx="1054" cy="111" r="0.6" fill="#ffffff" opacity="0.9"/>
+    <circle cx="908" cy="276" r="0.4" fill="#ffffff" opacity="0.3"/>
+    <circle cx="775" cy="48" r="0.4" fill="#ffffff" opacity="0.7"/>
+    <circle cx="670" cy="44" r="0.3" fill="#fff5f7" opacity="0.3"/>
+    <circle cx="55" cy="45" r="0.3" fill="#ffffff" opacity="0.3"/>
+  </g>
+
+  <!-- ANIMATED TWINKLING STARS -->
+  <g>
+<circle cx="483" cy="108" r="0.8" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.27;0.92;0.27" dur="3.4s" begin="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="58" r="1.2" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.21;0.99;0.21" dur="3.8s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="67" r="1.3" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.23;0.92;0.23" dur="5.2s" begin="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="927" cy="222" r="1.3" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.28;0.88;0.28" dur="5.2s" begin="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="418" cy="103" r="1.3" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.19;0.92;0.19" dur="3.5s" begin="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="853" cy="135" r="0.8" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.24;0.99;0.24" dur="3.4s" begin="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="511" cy="163" r="1.4" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="4.1s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1093" cy="233" r="1.1" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.25;0.96;0.25" dur="4.7s" begin="1.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="266" cy="206" r="1.2" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.22;0.89;0.22" dur="4.8s" begin="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="875" cy="73" r="1.3" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.27;0.98;0.27" dur="3.2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="441" cy="202" r="0.8" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.29;0.9;0.29" dur="3.9s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="963" cy="123" r="1.3" fill="#fff5f7">
+      <animate attributeName="opacity" values="0.18;0.92;0.18" dur="4.9s" begin="1.0s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- GRAIN OVERLAY (browsers only) -->
+  <rect width="1200" height="360" fill="white" filter="url(#grain)" opacity="0.04"/>
+
+  <!-- VIGNETTE -->
+  <rect width="1200" height="360" fill="url(#vignette)"/>
+
+  <!-- FULL MOON with multi-layer halo glow (her name 心月 means "heart moon") -->
+  <g>
+    <!-- Outer wide halo -->
+    <circle cx="160" cy="90" r="92" fill="url(#moonGlow)" opacity="0.6">
+      <animate attributeName="r" values="86;96;86" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Inner closer halo -->
+    <circle cx="160" cy="90" r="56" fill="url(#moonGlow)" opacity="0.85">
+      <animate attributeName="r" values="52;60;52" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Moon disc with subtle gradient -->
+    <circle cx="160" cy="90" r="34" fill="url(#titleGrad)" opacity="0.97"/>
+    <!-- Tiny crater-like spots for character (very subtle) -->
+    <circle cx="155" cy="82" r="3.5" fill="#f3d4d8" opacity="0.45"/>
+    <circle cx="170" cy="98" r="2.5" fill="#f3d4d8" opacity="0.4"/>
+    <circle cx="148" cy="95" r="2" fill="#f3d4d8" opacity="0.35"/>
+    <!-- Small companion stars beside the moon -->
+    <g fill="#fff5f7">
+      <path d="M 245 65 L 247 70 L 252 71 L 247 73 L 245 78 L 243 73 L 238 71 L 243 70 Z" opacity="0.85">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 100 150 L 101 152.5 L 103.5 153 L 101 153.5 L 100 156 L 99 153.5 L 96.5 153 L 99 152.5 Z" opacity="0.7">
+        <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" begin="1.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- DECORATIVE SPARKLE STAR (right side) -->
+  <g fill="#fce4ec" opacity="0.9">
+    <path d="M 1050 70 L 1053 78 L 1061 80 L 1053 82 L 1050 90 L 1047 82 L 1039 80 L 1047 78 Z">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 1050 80; 360 1050 80" dur="20s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- ELEGANT CORNER ORNAMENTS -->
+  <g stroke="#f48fb1" stroke-width="0.7" fill="none" opacity="0.5">
+    <path d="M 30 30 Q 40 30, 40 40 M 30 30 Q 30 40, 40 40"/>
+    <path d="M 1170 30 Q 1160 30, 1160 40 M 1170 30 Q 1170 40, 1160 40"/>
+    <path d="M 30 330 Q 40 330, 40 320 M 30 330 Q 30 320, 40 320"/>
+    <path d="M 1170 330 Q 1160 330, 1160 320 M 1170 330 Q 1170 320, 1160 320"/>
+  </g>
+
+  <!-- MAIN TITLE: 王心月 (Wang Xinyue) — elegant, generous letter-spacing -->
+  <text x="600" y="208" font-family="'Noto Serif CJK SC', 'Source Han Serif SC', STSong, 'Songti SC', SimSun, 'Microsoft YaHei', serif" font-size="76" font-weight="500"
+        fill="url(#titleGrad)" text-anchor="middle" letter-spacing="32" filter="url(#softGlow)">
+    王心月
+    <animate attributeName="opacity" values="0.92;1;0.92" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- SUBTITLE: tech stack — soft rose -->
+  <text x="600" y="248" font-family="'Cormorant Garamond', 'Times New Roman', serif" font-size="18" font-weight="400" font-style="italic"
+        fill="#f8bbd0" text-anchor="middle" letter-spacing="9">
+    .NET    ·    MAUI    ·    WPF    ·    CLOUD
+  </text>
+
+  <!-- PHILOSOPHY LINE — italic English tagline -->
+  <text x="600" y="276" font-family="'Cormorant Garamond', 'Times New Roman', serif" font-size="13" font-weight="400" font-style="italic"
+        fill="#d8b4fe" text-anchor="middle" letter-spacing="5" opacity="0.85">
+    elegant code  ·  refined experiences
+  </text>
+
+  <!-- USERNAME with delicate decorations -->
+  <g>
+    <text x="600" y="328" font-family="'Cormorant Garamond', 'Times New Roman', serif" font-size="11" font-weight="400" font-style="italic"
+          fill="#a78bfa" text-anchor="middle" letter-spacing="3" opacity="0.85">
+      ✦  @QwertyAlsoName  ✦
+    </text>
+  </g>
+
+  <!-- FALLING CHERRY BLOSSOM PETALS — overlay on top of everything -->
+<g>
+    <animateTransform attributeName="transform" type="translate" values="913,-79; 873,400" dur="12.4s" begin="1.7s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="4.5s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#f9a8d4" opacity="0.81" transform="scale(1.29)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="1055,-46; 1023,400" dur="14.2s" begin="3.7s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="6.6s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#fbcfe8" opacity="0.72" transform="scale(1.23)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="1111,-72; 1104,400" dur="14.2s" begin="0.9s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="6.8s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#f9a8d4" opacity="0.86" transform="scale(0.85)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="956,-51; 921,400" dur="9.9s" begin="0.4s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="6.6s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#f48fb1" opacity="0.89" transform="scale(0.77)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="359,-30; 398,400" dur="12.8s" begin="3.9s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="4.0s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#fbcfe8" opacity="0.74" transform="scale(0.85)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="729,-59; 661,400" dur="9.0s" begin="0.1s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="4.0s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#fce4ec" opacity="0.74" transform="scale(1.13)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="482,-61; 410,400" dur="10.4s" begin="0.6s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="4.5s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#fbcfe8" opacity="0.94" transform="scale(1.08)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="1072,-81; 1108,400" dur="12.4s" begin="2.2s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="3.4s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#f9a8d4" opacity="0.89" transform="scale(1.24)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="63,-85; 8,400" dur="10.8s" begin="0.3s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="4.5s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#fce4ec" opacity="0.83" transform="scale(1.04)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="127,-39; 89,400" dur="8.3s" begin="1.5s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="5.3s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#f48fb1" opacity="0.73" transform="scale(0.88)"/>
+    </g>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="368,-44; 351,400" dur="11.8s" begin="1.6s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="5.5s" repeatCount="indefinite"/>
+      <path d="M 0 -7 C -4 -5, -4 -1, 0 1 C 4 -1, 4 -5, 0 -7 Z" fill="#f8bbd0" opacity="0.82" transform="scale(1.3)"/>
+    </g>
+  </g>
+</svg>
